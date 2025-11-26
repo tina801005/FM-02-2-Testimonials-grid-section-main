@@ -1,0 +1,57 @@
+:root{
+    /* color */
+    --color-purple-50: hsl(260, 100%, 95%);
+    --color-purple-300: hsl(264, 82%, 80%);
+    --color-purple-500: hsl(263, 55%, 52%); 
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-100: hsl(214, 17%, 92%);
+    --color-grey-200: hsl(0, 0%, 81%);
+    --color-grey-400: hsl(224, 10%, 45%);
+    --color-grey-500: hsl(217, 19%, 35%);
+    --color-dark-blue: hsl(219, 29%, 14%);
+    --color-black: hsl(0, 0%, 7%);
+
+    /* background color */
+    --body-bg:var(--color-grey-100);
+    --purple-article-bg:var(--color-purple-500);
+    --white-article-bg:var(--color-white);
+    --grey-article-bg:var(--color-grey-500);
+    --black-article-bg:var(--color-dark-blue);
+
+    /* font color */
+    --purple-font-color-heading:var(--color-purple-50); /*title,name*/
+    --purple-font-color-body:var(--color-purple-300); /* paragraph */
+    --white-font-color-heading:var(--color-grey-500); /* title,name */
+    --white-font-color-body:var(--color-grey-400); /* paragraph */
+    --grey-font-color-heading:var(--color-white); /* title,name */
+    --grey-font-color-body:var(--color-grey-100); /* paragraph */
+    --black-font-color-heading:var(--color-white); /* title,name */
+    --black-font-color-body:var(--color-grey-200); /* paragraph */
+
+    /* profile-border-color */
+    --purple-profile-border-color:var(--color-purple-300);
+    --white-profile-border-color:var(--color-grey-100);
+    --grey-profile-border-color:var(--color-grey-200);
+    --black-profile-border-color:var(--color-purple-500);
+
+    /* font */
+    --font-family:"Barlow Semi Condensed", sans-serif;
+    --font-size: 13px;
+
+    /* size */
+    --article-padding: 30px; /* 文章內距 */
+    --gap-vertical: 20px; /*上下間隔*/
+    --gap-horizontal: 30px; /*左右間隔*/
+
+    /* article:基礎 spacing */
+    --gap-10:10px;
+    /* article:語意化alias */
+    --gap-heading-body:var(--gap-10); /*標題與內文間距*/
+    --gap-profile-name:var(--gap-10); /*大頭照與名稱間距*/
+
+
+    /* border */
+    --border-radius: 10px;
+
+    
+}
