@@ -26,13 +26,48 @@
       display: grid;
       align-items: center;
       min-height: 100vh;
+      padding: 0 5rem;
+    }
+
+    .main{
+      border: 1px solid red;
+      display: grid;
+      width: 100%;
+      height: 600px;
+    }
+    .main .leftaria{
+      display: grid;
     }
     
+    .main .rightaria{
+      background-color: var(--white-article-bg);
+      border-radius: var(--border-radius);
+    }
+    .main .leftaria .l-lefttop,.l-righttop,.l-leftbottom,.l-rightbottom{
+      border-radius: var(--border-radius);
+
+    }
+
+    .main .leftaria .l-lefttop{
+      background-color: var(--purple-article-bg);
+    }
+
+    .main .leftaria .l-righttop{
+      background-color: var(--grey-article-bg);
+    }
+
+    .main .leftaria .l-leftbottom{
+      background-color: var(--white-article-bg);
+    }
+
+    .main .leftaria .l-rightbottom{
+      background-color: var(--black-article-bg);
+    }
   </style>
   <!-- style測試區結束 -->
   
-  <!-- grid system -->
-  <link rel="stylesheet" href="./css/gridsystem.css">
+  <!-- grid-->
+  <link rel="stylesheet" href="./css/grid.css">
   <!-- media -->
   <link rel="stylesheet" href="./css/media.css">
 
@@ -43,6 +78,15 @@
   </style> -->
 </head>
 <body>
+  <main class="main">
+    <section class="leftaria">
+      <article class="l-lefttop"></article>
+      <article class="l-righttop"></article>
+      <article class="l-leftbottom"></article>
+      <article class="l-rightbottom"></article>
+    </section>
+    <article class="rightaria">B</article>
+  </main>
   <!-- Daniel Clifford
   Verified Graduate
 
