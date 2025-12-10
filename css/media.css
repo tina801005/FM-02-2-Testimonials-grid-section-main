@@ -1,0 +1,38 @@
+@media screen and (max-width: 992px) {
+    body{
+        padding: 0 30px;
+    }
+
+    .main{
+        display: grid; 
+        grid-template-columns: repeat(12,1fr); /* 12等分欄位 */
+    }
+    
+    .main .left-area {
+        grid-column: span 12; /* 佔滿12欄 */
+        gap: 30px;
+    }
+    .main .right-area {
+        grid-column: span 12; /* 佔滿12欄 */
+        margin-top: 30px;
+    }
+
+    .main .left-area .top-left{
+        grid-column:span 12; 
+    }
+    .left-area .top-left::before{
+        display: none;
+    }
+
+    .main .left-area .top-right{
+        grid-column:span 12; 
+    }
+
+    .main .left-area .bottom-left{
+        grid-column:span 12; 
+    }
+
+    .main .left-area .bottom-right{
+        grid-column:span 12; 
+    }
+}

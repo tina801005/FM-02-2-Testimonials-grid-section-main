@@ -36,7 +36,7 @@
 
     /* font */
     --font-family:"Barlow Semi Condensed", sans-serif;
-    --font-size: 13px;
+    --font-size: 15px;
 
     /* size */
     --article-padding: 30px; /* 文章內距 */
@@ -45,9 +45,11 @@
 
     /* article:基礎 spacing */
     --gap-10:10px;
+    --gap-20:20px;
+
     /* article:語意化alias */
     --gap-heading-body:var(--gap-10); /*標題與內文間距*/
-    --gap-profile-name:var(--gap-10); /*大頭照與名稱間距*/
+    --gap-profile-name:var(--gap-20); /*大頭照與名稱間距*/
 
     /* border */
     --border-radius: 10px;

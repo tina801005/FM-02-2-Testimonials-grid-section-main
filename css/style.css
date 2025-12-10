@@ -4,3 +4,173 @@
     box-sizing: border-box;
     font-family: var(--font-family);
 }
+
+body{
+        background-color: var(--body-bg);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        min-height: 100vh;
+        padding: 0 5rem;
+    }
+
+    .main{
+        width: 100%;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+    
+
+/* 共用格式樣式 開始 name-card、profile image、name、name-title、文章title、文章paragraph */
+    .name-card{
+        display: flex;
+        align-items: center;
+        gap: var(--gap-profile-name);
+        margin-bottom: 15px;
+    }
+    .name-card .profile{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .name-card .profile img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .name-card .user{
+        display: flex;
+        flex-direction: column;
+    }
+    .name-card .user .user-name{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .content-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .content-paragraph{
+        font-size: var(--font-size);
+        font-weight: 500;
+        line-height: 1.4;
+    }
+/* 共用格式樣式 結束 */
+
+/* 上左插圖樣式 開始 */
+    .left-area .top-left::before{
+        content:"";
+        background-image: url(https://raw.githubusercontent.com/tina801005/FM-02-2-Testimonials-grid-section-main/49ee2c03ddb857669f4eab289a11146fddfd92d0/images/bg-pattern-quotation.svg);
+        position: absolute;
+        top: 0;
+        right: 40px;
+        z-index: -1;
+        width: 150px;
+        height: 125px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+/* 上左插圖樣式 結束 */
+
+/* 個別樣式調整 開始 */
+/* 左側 left-area */
+    .main .left-area .top-left,
+    .main .left-area .top-right,
+    .main .left-area .bottom-left,
+    .main .left-area .bottom-right{
+        border-radius: var(--border-radius);
+        padding: 30px;
+    }
+/* 上左 top-left */
+    .main .left-area .top-left{
+        background-color: var(--purple-article-bg); /* 背景色 */
+        position: relative;
+        z-index: 9;
+    }
+    .left-area .name-card .top-left_profile-border{
+        border: 3px solid var(--purple-profile-border-color); /* profile邊框 */
+    }
+    .left-area .name-card .top-left_user-color{
+        color: var(--purple-font-color-heading); /* name&title顏色 */
+    }
+    .left-area .top-left .top-left_content-title-color{
+        color: var(--purple-font-color-heading); /* 文章title顏色 */
+    }
+    .left-area .top-left .top-left_content-paragraph-color{
+        color: var(--purple-font-color-body); /* 文章paragraph顏色 */
+    }
+
+/* 上右 top-right */
+    .main .left-area .top-right{
+        background-color: var(--grey-article-bg); /* 背景色 */
+    }
+    .left-area .name-card .top-right_profile-border{
+        border: 3px solid var(--grey-profile-border-color); /* profile邊框 */
+    }
+    .left-area .name-card .top-right_user-color{
+        color: var(--grey-font-color-heading); /* name&title顏色 */
+    }
+    .left-area .top-right .top-right_content-title-color{
+        color: var(--grey-font-color-heading); /* 文章title顏色 */
+    }
+    .left-area .top-right .top-right_content-paragraph-color{
+        color: var(--grey-font-color-body); /* 文章paragraph顏色 */
+    }
+
+/* 下左 bottom-left */
+    .main .left-area .bottom-left{
+        background-color: var(--white-article-bg); /* 背景色 */
+    }
+    .left-area .name-card .bottom-left_profile-border{
+        border: 3px solid var(--white-profile-border-color); /* profile邊框 */
+    }
+    .left-area .name-card .bottom-left_user-color{
+        color: var(--white-font-color-heading); /* name&title顏色 */
+    }
+    .left-area .bottom-left .bottom-left_content-title-color{
+        color: var(--white-font-color-heading); /* 文章title顏色 */
+    }
+    .left-area .bottom-left .bottom-left_content-paragraph-color{
+        color: var(--white-font-color-body); /* 文章paragraph顏色 */
+    }
+
+/* 下右 bottom-right */
+    .main .left-area .bottom-right{
+        background-color: var(--black-article-bg); /* 背景色 */
+    }
+    .left-area .name-card .bottom-right_profile-border{
+        border: 3px solid var(--black-profile-border-color); /* profile邊框 */
+    }
+    .left-area .name-card .bottom-right_user-color{
+        color: var(--black-font-color-heading); /* name&title顏色 */
+    }
+    .left-area .bottom-right .bottom-right_content-title-color{
+        color: var(--black-font-color-heading); /* 文章title顏色 */
+    }
+    .left-area .bottom-right .bottom-right_content-paragraph-color{
+        color: var(--black-font-color-body); /* 文章paragraph顏色 */
+    }
+
+/* 右側 right-area */
+    .main .right-area{
+        background-color: var(--white-article-bg);
+        border-radius: var(--border-radius);
+        padding: 30px;
+    }
+    .right-area .name-card .right-area_profile-border{
+        border: 3px solid var(--white-profile-border-color); /* profile邊框 */
+    }
+    .right-area .name-card .right-area_user-color{
+        color: var(--white-font-color-heading); /* name&title顏色 */
+    }
+    .right-area .right-area_content-title-color{
+        color: var(--white-font-color-heading); /* 文章title顏色 */
+    }
+    .right-area .right-area_content-paragraph-color{
+        color: var(--white-font-color-body); /* 文章paragraph顏色 */
+    }
+
+/* 個別樣式調整 結束 */

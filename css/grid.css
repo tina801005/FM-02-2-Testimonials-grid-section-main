@@ -1,31 +1,33 @@
 .main{
+    display: grid; 
     grid-template-columns: repeat(12,1fr); /* 12等分欄位 */
     column-gap:var(--gap-horizontal); /*左右間隔*/
 }
 
-.main .leftaria{
-    grid-column:span 9; /* 佔8欄 */
+.main .left-area{
+    display: grid;
+    grid-column:span 9; /* 佔9欄 */
     grid-template-columns: repeat(12,1fr); /* 12等分欄位 */
     column-gap:var(--gap-horizontal); /*左右間隔*/
     row-gap: var(--gap-vertical); /*上下間隔*/
 }
 
-.main .rightaria{
-    grid-column:span 3; /* 佔4欄 */
+.main .right-area{
+    grid-column:span 3; /* 佔3欄 */
 }
 
-.main .leftaria .l-lefttop{
+.main .left-area .top-left{
     grid-column:span 8; /* 佔8欄 */
 }
 
-.main .leftaria .l-righttop{
+.main .left-area .top-right{
     grid-column:span 4; /* 佔4欄 */
 }
 
-.main .leftaria .l-leftbottom{
+.main .left-area .bottom-left{
     grid-column:span 4; /* 佔4欄 */
 }
 
-.main .leftaria .l-rightbottom{
+.main .left-area .bottom-right{
     grid-column:span 8; /* 佔8欄 */
 }
