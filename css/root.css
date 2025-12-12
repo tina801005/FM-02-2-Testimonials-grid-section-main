@@ -36,7 +36,7 @@
 
     /* font */
     --font-family:"Barlow Semi Condensed", sans-serif;
-    --font-size: 15px;
+    --font-size: 1rem;
 
     /* size */
     --article-padding: 30px; /* 文章內距 */
